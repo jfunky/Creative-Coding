@@ -9,8 +9,8 @@ Nicole Carpenter
 PImage img;
 
 //Basket ints
-int circleX = (250);
-int circleY = (405);
+int basketX = (250);
+int basketY = (405);
 int counter = 0;
 
 //Int to change screens
@@ -175,16 +175,16 @@ void draw() {
   //Basket
   if (key == CODED) {
     if (keyCode == LEFT) {
-      circleX--;
+      basketX--;
     } else if (keyCode == RIGHT) {
-      circleX++;
+      basketX++;
     }
     //Code for basket
     fill(200, 0, 0);
-    rect(circleX, circleY, 20, 20);
+    rect(basketX, basketY, 20, 20);
   }
 
-  if (circleX <= 0 || circleX >= 500 ) {
+  if (basketX <= 0 || basketX >= 500 ) {
     //Future fire
   }
   //Bottom
